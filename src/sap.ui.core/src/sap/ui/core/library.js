@@ -868,7 +868,7 @@ sap.ui.define(['jquery.sap.global', 'sap/ui/base/DataType', './Core'],
 	 */
 	sap.ui.core.ID = DataType.createType('sap.ui.core.ID', {
 			isValid : function(vValue) {
-				return /^([A-Za-z_][-A-Za-z0-9_.:]*)$/.test(vValue);
+				return /^([A-Za-z_][-A-Za-z0-9_.:\s]*)$/.test(vValue);
 			}
 		},
 		DataType.getType('string')
